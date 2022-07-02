@@ -18,6 +18,12 @@ public class Main {
             tempFahrenheint = 32 + (tempCelsius * 9 / 5);
             System.out.println("The temperature you entered from celsius to fahrenheit is at the freezing point: " + tempFahrenheint);
         }
+        else
+        {
+            trash = in.nextLine();
+            System.out.println("The temperature you entered is invalid: " + trash);
+        }
+
 
         System.out.print("Enter the temperature in Celsius value: ");
         if(in.hasNextDouble())
@@ -26,6 +32,11 @@ public class Main {
             in.nextLine();
             tempFahrenheint = 32 + (tempCelsius * 9 / 5);
             System.out.println("The temperature you entered from celsius to fahrenheit is at the boiling point: " + tempFahrenheint);
+        }
+        else
+        {
+            trash = in.nextLine();
+            System.out.println("The temperature you entered is invalid: " + trash);
         }
 
         System.out.print("Enter the temperature in Celsius value: ");
